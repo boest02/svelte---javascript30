@@ -1,10 +1,7 @@
 <script>
     export let data = [];
-    let headers = [];
 
-    for( var j in data[0] ) {
-        headers.push(j);
-    } 
+    let headers = Object.keys(data[0]);
 </script>
 
 <table>
